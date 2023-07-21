@@ -1,2 +1,0 @@
-!function(){document.querySelector("[data-start]"),document.querySelector("[data-days]"),document.querySelector("[data-hours]"),document.querySelector("[data-minutes]"),document.querySelector("[data-seconds]"),document.querySelector("#datetime-picker"),new Date;function e(e){var o=6e4,t=36e5,r=24*t;return{days:Math.floor(e/r),hours:Math.floor(e%r/t),minutes:Math.floor(e%r%t/o),seconds:Math.floor(e%r%t%o/1e3)}}setInterval((function(){new Date})),console.log(e(2e3)),console.log(e(14e4)),console.log(e(2414e4))}();
-//# sourceMappingURL=02-timer.c78c7071.js.map
