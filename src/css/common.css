@@ -16,3 +16,18 @@ img {
   display: block;
   max-width: 100%;
 }
+.timer {
+  display: -webkit-flex;
+}
+.field {
+  padding: 5px;
+  color: blue;
+  font-weight: 500;
+  font-size: 20px;
+}
+.flatpickr-input {
+  font-size: 20px;
+}
+.button {
+  font-size: 20px;
+}
