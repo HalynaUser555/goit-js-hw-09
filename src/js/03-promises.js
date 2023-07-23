@@ -21,6 +21,19 @@ form.addEventListener('submit', event => {
   const step = form.step.value;
   const amount = form.amount.value;
 
+  if (delay <= 0) {
+    alert("Amount should be positive")
+    return;
+  };
+  if (step <= 0) {
+    alert("Amount should be positive")
+    return;
+  };
+  if (amount <= 0) {
+    alert("Amount should be positive")
+    return;
+  };
+
   for (let position = 0; position < amount; position += 1) {
     createPromise(position, +delay + +step * +position)
       .then(({ position, delay }) => {

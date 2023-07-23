@@ -38,6 +38,10 @@ button.addEventListener('click', () => {
         inputElem.disabled = true;
         const currentDate = new Date();
         let timer = convertMs(selectedDate - currentDate)
+        if (selectedDate < currentDate) {
+            clearInterval(nIntervId);
+            return;
+        }
         daysElem.innerText = timer.days;
         hoursElem.innerText = timer.hours;
         minutesElem.innerText = timer.minutes;
